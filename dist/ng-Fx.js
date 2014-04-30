@@ -658,7 +658,7 @@
 
   angular.module('fx.animations.rotations', ['fx.animations.create'])
 
-  .animation('.fx-rotate-normal', ['RotateAnimation', function(RotateAnimation){
+  .animation('.fx-rotate-normal', ['RotateAnimation', function (RotateAnimation){
     var effect = {
       start: {opacity: 0, transformOrigin: 'center center', transform: 'rotate(-200deg)'},
       end: {opacity: 1, transformOrigin: 'center center', transform: 'rotate(0)'},
@@ -666,8 +666,16 @@
       animation: 'rotate-normal'
     };
     return new RotateAnimation(effect);
+  }])
+  .animation('.fx-rotate-down-left', ['RotateAnimation', function (RotateAnimation) {
+    var effect = {
+      start: {opacity: 0, transformOrigin: 'left bottom', transform: 'rotate(-90deg)'},
+      end: {opacity: 1, transformOrigin: 'left bottom', transform: 'rotate(0)'},
+      inverse: {opacity: 0, transformOrigin: 'left bottom', transform: 'rotate(90deg)'},
+      animation: 'rotate-down-left'
+    };
+    return new RotateAnimation(effect);
   }]);
-
 }(angular));
 
 // Collect all the animations into one master module. this module is the main module
