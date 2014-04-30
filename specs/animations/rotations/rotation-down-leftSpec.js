@@ -1,4 +1,4 @@
-describe('Bounce left animation', function() {
+describe('Rotate down left animation', function() {
   var prefixes = {
     '-webkit-transform': true,
     '-moz-transform': true,
@@ -10,9 +10,9 @@ describe('Bounce left animation', function() {
   beforeEach(module('ngAnimateMock'));
   beforeEach(module('fx.animations'));
 
-  it("should bounce-left in", function(done) {
+  it("should rotate-down-left in", function(done) {
     inject(function($animate, $compile, $document, $rootScope, $rootElement, $window, $timeout) {
-      var element = $compile('<div class="fx-bounce-right">bounce-left</div>')($rootScope);
+      var element = $compile('<div class="fx-rotate-down-left" style="background-color: blue; color: white">rotate-down-left</div>')($rootScope);
       $rootElement.append(element);
       angular.element($document[0].body).append($rootElement);
       $rootScope.$digest();
@@ -27,17 +27,17 @@ describe('Bounce left animation', function() {
             transform = prefix;
           }
         });
-
-        expect(element.css('opacity')).to.be('1');
-        expect(parseInt(element.css(transform)[7])).to.be.above(0);
+        console.log(element.css(transform + '-origin'));
+        expect(element.css(transform)).to.be('matrix(1, 0, 0, 1, 0, 0)');
+        expect(element.css(transform + '-origin')).to.be('0% 100% 0px');
         done();
-      },1000);
+      },500);
     });
   });
 
-  it("should bounce-left out", function(done) {
+  it("should rotate-down-left out", function(done) {
     inject(function($animate, $compile, $document, $rootScope, $rootElement, $window, $timeout) {
-      var element = $compile('<div class="fx-bounce-left">bounce-left</div>')($rootScope);
+      var element = $compile('<div class="fx-rotate-down-left">rotate-down-left</div>')($rootScope);
       $rootElement.append(element);
       angular.element($document[0].body).append($rootElement);
       $rootScope.$digest();
@@ -47,15 +47,22 @@ describe('Bounce left animation', function() {
       $rootScope.$digest();
       $timeout.flush();
       $window.setTimeout(function(){
-        expect(element.css('opacity')).to.be('0');
+        angular.forEach(prefixes, function(bool, prefix){
+          if(element.css(prefix)){
+            transform = prefix;
+          }
+        });
+        console.log(element.css(transform + '-origin'));
+        expect(element.css(transform)).to.be('matrix(1, 0, 0, 1, 0, 0)');
+        expect(element.css(transform + '-origin')).to.be('0% 100% 0px');
         done();
-      },1000);
+      },500);
     });
   });
 
-  it("should bounce-left move", function(done) {
+  it("should rotate-down-left move", function(done) {
     inject(function($animate, $compile, $document, $rootScope, $rootElement, $window, $timeout) {
-      var element = $compile('<div class="fx-bounce-left">bounce-left</div>')($rootScope);
+      var element = $compile('<div class="fx-rotate-down-left">rotate-down-left</div>')($rootScope);
       $rootElement.append(element);
       angular.element($document[0].body).append($rootElement);
       $rootScope.$digest();
@@ -77,9 +84,9 @@ describe('Bounce left animation', function() {
     });
   });
 
-  it('should bounce-left removeClass', function(done){
+  it('should rotate-down-left removeClass', function(done){
     inject(function($animate, $compile, $document, $rootScope, $rootElement, $window, $timeout) {
-      var element = $compile('<div class="fx-bounce-left ng-hide">bounce-left</div>')($rootScope);
+      var element = $compile('<div class="fx-rotate-down-left ng-hide">rotate-down-left</div>')($rootScope);
       $rootElement.append(element);
       angular.element($document[0].body).append($rootElement);
       $rootScope.$digest();
@@ -101,9 +108,9 @@ describe('Bounce left animation', function() {
     });
   });
 
-  it('should bounce-left addClass', function(done){
+  it('should rotate-down-left addClass', function(done){
     inject(function($animate, $compile, $document, $rootScope, $rootElement, $window, $timeout) {
-      var element = $compile('<div class="fx-bounce-left">bounce-left</div>')($rootScope);
+      var element = $compile('<div class="fx-rotate-down-left">rotate-down-left</div>')($rootScope);
       $rootElement.append(element);
       angular.element($document[0].body).append($rootElement);
       $rootScope.$digest();
