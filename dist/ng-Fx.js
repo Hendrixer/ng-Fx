@@ -40,7 +40,7 @@
           if(options.trigger){
             self.emit(element, options.animation, options.motion);
           }
-          console.log(options);
+          // console.log(options); //This logs every time an animation occurs
           end();
         }, time);
         element.data(options.timeoutKey, timer);
