@@ -36,8 +36,8 @@
   "dependencies": {
     "angular-animate": "~1.2.16",
     "angular": "*",
-    "gsap": "~1.11.6"
-
+    "gsap": "~1.11.6",
+    "bootstrap-css-only": "~3.2.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.16",
