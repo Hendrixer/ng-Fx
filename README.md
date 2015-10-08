@@ -1,9 +1,15 @@
-ng-Fx    [![Build Status](https://travis-ci.org/Hendrixer/ngFx.svg?branch=master)](https://travis-ci.org/Hendrixer/ng-Fx)   <img src="http://img.shields.io/badge/Built%20with-Gulp-red.svg" />
+<p align="center">
+  <a href="https://angularclass.com" target="_blank">
+    <img src="https://cloud.githubusercontent.com/assets/1016365/10356922/151a0a3c-6d31-11e5-8bf0-64360320d908.png" alt="ngFx" width="500" height="320"/>
+  </a>
+</p>
+
+ngFx    [![Build Status](https://travis-ci.org/Hendrixer/ngFx.svg?branch=master)](https://travis-ci.org/Hendrixer/ng-Fx)   <img src="http://img.shields.io/badge/Built%20with-Gulp-red.svg" />
 ===============
 
 ### A simple way to add beautiful animations to your angular apps. Animations based off [animate.css](http://daneden.github.io/animate.css/). All animations are built in JavaScript.
 
-#### ng-Fx does not rely on CSS for animations. This allows it to be dynamic and able to adjust on the fly. The only predefined CSS classes are the animations and the easings. ngAnimate allows ngFx to create JavaScript based animations, so the classes do not correspond to a style in a CSS file.
+#### ngFx does not rely on CSS for animations. This allows it to be dynamic and able to adjust on the fly. The only predefined CSS classes are the animations and the easings. ngAnimate allows ngFx to create JavaScript based animations, so the classes do not correspond to a style in a CSS file.
 
 ## Interactive Demo
 Preview the goodness at [hendrixer.github.io](https://hendrixer.github.io/).
@@ -168,3 +174,17 @@ angular.module('myApp', ['ngFx'])
 + Features will not be accepted without specs created for them
 + Run ```gulp``` and all the source files will be watched and concatenated
 + Open the ```index.html``` and use the test app as a playground
+
+___
+
+enjoy — **AngularClass** 
+
+<br><br>
+
+[![AngularClass](https://cloud.githubusercontent.com/assets/1016365/9863770/cb0620fc-5af7-11e5-89df-d4b0b2cdfc43.png  "Angular Class")](https://angularclass.com)
+##[AngularClass](https://angularclass.com)
+> Learn AngularJS, Angular 2, and Modern Web Development form the best.
+> Looking for corporate Angular training, want to host us, or Angular consulting? scott@angularclass.com
+
+# License
+ [MIT](/LICENSE)
