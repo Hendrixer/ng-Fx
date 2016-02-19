@@ -60,7 +60,7 @@ Using `fx-ease-{curve name}` will apply the given curve to the animation. Here i
   class="fx-fade-up fx-ease-in-quad">
 </div>
 ```
-``html
+```html
 <div
   ng-repeat="card in cards"
   class="fx-fade-up fx-ease-out-expo">
