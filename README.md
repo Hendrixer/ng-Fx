@@ -119,4 +119,4 @@ Some helpful commands in gulp
 * `gulp animation --name animation-name`
   * call this command with a new animation name and it will create all the boilerplate in the `src/animation/element/` that you need to get started with a new animation.
   
-We use ,*cough*, try to use the [angular contributing guidelines]('https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit')
+We use,*cough*, try to use the [angular contributing guidelines]('https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit')
