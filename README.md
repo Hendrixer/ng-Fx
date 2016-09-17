@@ -30,6 +30,14 @@ using `npm`
     require('angular-animate')
   ])
 ```
+using `bower`
+  * `bower install --save ng-fx`
+``` javascript
+  angular.module('app', [
+    require('ngFx'),
+    require('ngAnimate')
+  ])
+```
 
 ## Using animations
 ng-fx makes it so simple to use animations by tying into `ngAnimate` and [all the hooks]('https://code.angularjs.org/1.4.7/docs/guide/animations') it provides.
