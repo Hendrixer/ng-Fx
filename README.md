@@ -1,122 +1,84 @@
 <p align="center">
-  <a href="http://courses.angularclass.com/courses/angular-2-fundamentals" target="_blank">
-    <img width="438" alt="Angular 2 Fundamentals" src="https://cloud.githubusercontent.com/assets/1016365/17200649/085798c6-543c-11e6-8ad0-2484f0641624.png">
+  <a href="https://tipe.io/" target="_blank">
+    <img  alt="Tipe" src="https://user-images.githubusercontent.com/1016365/30999155-30430eb8-a488-11e7-850e-a7c38dad77c1.png" class="img-responsive">
   </a>
 </p>
+
+
+# Tipe [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tipe/tipe)
+Next Generation API-first CMS
+
+1. **Design your content** Shape and design content for any project you and your team are working on.
+2. **Create your content** Focus and create meaningful content without blocking development.
+3. **Access your content anywhere** Access your content on any app or platform with our sophisticated next generation APIs.
 
 ---
+
 <p align="center">
-  <a href="https://angularclass.com" target="_blank">
-    <img src="https://cloud.githubusercontent.com/assets/1016365/10356922/151a0a3c-6d31-11e5-8bf0-64360320d908.png" alt="ng-fx" width="500" height="320"/>
+  <img width="487" alt="Tipe For Developers" src="https://user-images.githubusercontent.com/1016365/32705887-92e25d68-c7cd-11e7-9751-acdc196e7cb8.png">
+</p>
+
+## For Developers
+The Ultimate Workflow   
+Focus on fixing bugs, not typos. No matter if you're building for VR, web, or mobile app, access your content anywhere with our GraphQL or REST API. Manage your content in our dashboard or with our API.
+
+---
+
+<p align="center">
+  <img width="572" alt="Tipe For Marketing" src="https://user-images.githubusercontent.com/1016365/32705904-b4775cc6-c7cd-11e7-8f2c-0c940b56e744.png">
+</p>
+
+## For Marketing
+Rich Content Editing   
+Anyone can create content with our dashboard. From creating blog posts to instructional videos, Tipe provides all the tools you will ever need to supply content to your apps.
+
+---
+
+<p align="center">
+  <img width="495" alt="screen shot 2017-11-12 at 5 20 29 pm" src="https://user-images.githubusercontent.com/1016365/32705913-ce4106f2-c7cd-11e7-8df4-1939267b5053.png">
+</p>
+
+## For Agencies
+Deliver Faster   
+Setup a Tipe account for your clients and allow them to manage their content while you focus on building their apps. Deliver faster all without being blocked by content. Have your own custom CMS? Integrate with Tipe and let us be your content engine.
+
+---
+
+<p align="center">
+  <img width="559" alt="screen shot 2017-11-12 at 5 21 14 pm" src="https://user-images.githubusercontent.com/1016365/32705921-e9f05c22-c7cd-11e7-8055-dee736b2620b.png">
+</p>
+
+## For Enterprise
+Better Efficiency, Less Money  
+Tipe is future proof, we deliver content everywhere. Don't waste time setting up infrastructure for your content. Tipe uses a global CDN with a serverless architecture that scales to meet your needs. Devs can focus on projects, allowing them to go to market faster.
+
+---
+
+# Features
+> More reasons to use Tipe
+
+## Role Based Workflows
+Robust role system giving you granular control over who can manage your content.
+
+## Localization
+Tipe supports i18n so you can create content for any language you need. Access the content through our API for your localized apps.
+
+## GraphQL or REST API
+Use our REST API to access your content. If your team is ready to switch to GraphQL, no problem, you can access your same content with our GraphQL API as well.
+
+## Rich Content Editing
+Using our dashbord, you can create content for any type of project you're working on.
+
+## Webhooks
+Get notified about content updates. Perfect for triggering redeploys, chat messages, or emails to interested parties.
+
+## Scalable Platform
+We use a global CDN and a serverless architecture to ensure speed and reliability for your content access. For our Enterprise customers, we offer dedicated infrastructure.
+
+---
+
+<p align="center">
+  <a href="https://tipeio.typeform.com/to/r0Sx82" target="_blank">
+    <img  alt="Tipe CMS" src="https://user-images.githubusercontent.com/1016365/32705998-a4bc0b64-c7ce-11e7-95bf-94bf833cc6f4.png" class="img-responsive">
   </a>
 </p>
-# ng-fx
-> animation library for angular
-
-
-# Overview [![Build Status](https://travis-ci.org/AngularClass/ng-fx.svg?branch=master)](https://travis-ci.org/angularclass/ngFx)
-ng-fx is an angular implementation of the popular [Animate.css](https://daneden.github.io/animate.css/) using the new `$animateCss` service in angular. This is the core and foundation, but there is room for so much more. You can use these css animations dynamically with zero setup. So you get the best of both worlds (css vs js animations). Take a look and enjoy.
-
-# Getting started
-
-## Installing
-**ng-fx requires `ngAnimate >=1.4`.** Previous versions of ng-fx `<2.0` support earlier versions of `ngAnimate`, but dev support is lacking there. If you would love to help maintain, let me know!
-
-using `npm`
-  * `npm i --save ng-fx`
-``` javascript
-  angular.module('app', [
-    require('ng-fx'),
-    require('angular-animate')
-  ])
-```
-
-## Using animations
-ng-fx makes it so simple to use animations by tying into `ngAnimate` and [all the hooks]('https://code.angularjs.org/1.4.7/docs/guide/animations') it provides.
-
-### First animation
-After installing ng-fx, using the animations are as easy as declaring css classes on elements.
-```html
-<div ng-if="show" class="fx-fade-normal"></div>
-```
-Few things happening here. First, we must tie into animations from `ngAnimate`, in this case we're attaching an animation to the `enter` and `leave` hooks of `ng-if`. Next we declare the animation type by using the `fx` namespace followed by the animation name (`fx-fade-normal`). Place this in the class of the element. That's it. ng-fx has an api to adjust the animations' speed, ease, and to stagger or not. Here's a list of all the [animations ng-fx supports](https://github.com/angularclass/ngFx/blob/master/animationList.txt)
-
-### Adjusting speed
-ng-fx looks like innocent css animations. They are ran like css animations (performance!!!) but they are indeed dynamic like js animations as well. Here's how we can adjust the speed of an animation.
-```html
-<div ng-show="error" class="fx-fade-up fx-speed-342"></div>
-```
-
-Using the `fx-[speed | dur | duration]-{any num in ms}` we can control the speed of said animation. So the following are all equivalent.
-* `fx-speed-230`
-* `fx-dur-230`
-* `fx-duration-230`
-
-### Adjusting the ease
-```html
-<div
-  ng-repeat="card in cards"
-  class="fx-fade-up fx-ease-sine">
-</div>
-```
-Using `fx-ease-{curve name}` will apply the given curve to the animation. Here is a list of all the [curves ng-fx supports](https://github.com/angularclass/ngFx/blob/master/easingList.txt). If you don't declare a direction, the ease will default to `ease-in-out`. You can override that...
-
-```html
-<div
-  ng-repeat="card in cards"
-  class="fx-fade-up fx-ease-in-quad">
-</div>
-```
-``html
-<div
-  ng-repeat="card in cards"
-  class="fx-fade-up fx-ease-out-expo">
-</div>
-```
-Using `fx-ease-{direction}-{curve name}` will apply the ease direction to the curve
-
-### Staggering
-With `ngAnimate` 1.4, we now have support for staggering outside of css animations.
-
-```html
-<div
-  ng-repeat="card in cards"
-  class="fx-rotate-up-left fx-stagger-245">
-</div>
-```
-
-Using `fx-stagger-{delay in ms}` on an animation in `ng-repeat` will stagger those elements with the given delay in between.
-
-### Contributing
-All help is welcome! ng-fx is an ongoing and live project. If you'd like to add more animations or support new feature, open an issue and even submit it yourself. If you're new to open source, I'll help you get your first commit in, ping me. To get started make sure you have...
-
-* `node >=0.12`
-* `gulp`
-* `webpack`
-
-If you're good there, then...
-
-* `fork`
-* `clone` your fork
-* cut a new branch
-* `npm install`
-* `npm start`
-
-This will compile and build the project. ng-fx uses `ES2015`, `webpack`, and `gulp`, nothing else too fancy here.
-
-There is a demo app to try out the animations.
-
-Most the commands you'll need are baked into `npm`
-* `npm run build`
-  * builds and outputs regular and min src code
-* `npm test`
-  * run test
-* `npm start`
-  * run build and watch for changes to rebuild, launches the demo app and refreshes that on change.
-
-Some helpful commands in gulp
-
-* `gulp animation --name animation-name`
-  * call this command with a new animation name and it will create all the boilerplate in the `src/animation/element/` that you need to get started with a new animation.
-  
-We use ,*cough*, try to use the [angular contributing guidelines]('https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#commit')
