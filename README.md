@@ -35,7 +35,7 @@ Anyone can create content with our dashboard. From creating blog posts to instru
 ---
 
 <p align="center">
-  <img width="495" alt="screen shot 2017-11-12 at 5 20 29 pm" src="https://user-images.githubusercontent.com/1016365/32705913-ce4106f2-c7cd-11e7-8df4-1939267b5053.png">
+  <img width="495" alt="Tipe For Agencies" src="https://user-images.githubusercontent.com/1016365/32705913-ce4106f2-c7cd-11e7-8df4-1939267b5053.png">
 </p>
 
 ## For Agencies
@@ -45,7 +45,7 @@ Setup a Tipe account for your clients and allow them to manage their content whi
 ---
 
 <p align="center">
-  <img width="559" alt="screen shot 2017-11-12 at 5 21 14 pm" src="https://user-images.githubusercontent.com/1016365/32705921-e9f05c22-c7cd-11e7-8055-dee736b2620b.png">
+  <img width="559" alt="Tipe For Enterprise" src="https://user-images.githubusercontent.com/1016365/32705921-e9f05c22-c7cd-11e7-8055-dee736b2620b.png">
 </p>
 
 ## For Enterprise
