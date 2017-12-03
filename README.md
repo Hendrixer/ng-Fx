@@ -50,7 +50,7 @@ Setup a Tipe account for your clients and allow them to manage their content whi
 
 ## For Enterprise
 Better Efficiency, Less Money  
-Tipe is future proof, we deliver content everywhere. Don't waste time setting up infrastructure for your content. Tipe uses a global CDN with a serverless architecture that scales to meet your needs. Devs can focus on projects, allowing them to go to market faster.
+Tipe is future proof, we deliver content everywhere. Don't waste time setting up infrastructure for your content. Tipe uses a global CDN with a serverless architecture that scales to meet your needs. Developers can focus on projects, allowing them to go to market faster.
 
 ---
 
@@ -67,7 +67,7 @@ Tipe supports i18n so you can create content for any language you need. Access t
 Use our REST API to access your content. If your team is ready to switch to GraphQL, no problem, you can access your same content with our GraphQL API as well.
 
 ## Rich Content Editing
-Using our dashbord, you can create content for any type of project you're working on.
+Using our dashboard, you can create content for any type of project you're working on.
 
 ## Webhooks
 Get notified about content updates. Perfect for triggering redeploys, chat messages, or emails to interested parties.
