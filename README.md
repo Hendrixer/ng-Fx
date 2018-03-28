@@ -78,7 +78,7 @@ We use a global CDN and a serverless architecture to ensure speed and reliabilit
 ---
 
 <p align="center">
-  <a href="https://tipeio.typeform.com/to/r0Sx82" target="_blank">
+  <a href="https://tipe.io/?ref=github-readme" target="_blank">
     <img  alt="Tipe CMS" src="https://user-images.githubusercontent.com/1016365/32705998-a4bc0b64-c7ce-11e7-95bf-94bf833cc6f4.png" class="img-responsive">
   </a>
 </p>
