@@ -5,7 +5,7 @@
 </p>
 
 
-# Tipe [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tipe/tipe)
+# Tipe [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/tipe/tipe) [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/tipe)
 Next Generation API-first CMS
 
 1. **Design your content** Shape and design content for any project you and your team are working on.
