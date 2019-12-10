@@ -1,0 +1,25 @@
+{
+  "name": "tipe",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"https://tipe.io/\" target=\"_blank\">     <img  alt=\"Tipe\" src=\"https://cdn.tipe.io/tipe/tipe-github.png?w=800&dpr=2\" class=\"img-responsive\">   </a> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tipeio/tipe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tipeio/tipe/issues"
+  },
+  "homepage": "https://github.com/tipeio/tipe#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "babel-loader": "^8.0.6"
+  }
+}
